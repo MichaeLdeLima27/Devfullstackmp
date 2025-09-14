@@ -1,51 +1,51 @@
-import { useState, useEffect } from "react";
-import { Link } from "react-scroll";
+import { useState, useEffect } from 'react'
+import { Link } from 'react-scroll'
 
 function Navbar() {
-  const [navActive, setNavActive] = useState(false);
+  const [navActive, setNavActive] = useState(false)
 
   const toggleNav = () => {
-    setNavActive(!navActive);
-  };
+    setNavActive(!navActive)
+  }
 
   const closeMenu = () => {
-    setNavActive(false);
-  };
+    setNavActive(false)
+  }
 
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth <= 500) {
-        closeMenu;
+        closeMenu
       }
-    };
+    }
 
-    window.addEventListener("resize", handleResize);
+    window.addEventListener('resize', handleResize)
 
     return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
+      window.removeEventListener('resize', handleResize)
+    }
+  }, [])
 
   useEffect(() => {
     if (window.innerWidth <= 1200) {
-      closeMenu;
+      closeMenu
     }
-  }, []);
+  }, [])
 
   return (
-    <nav className={`navbar ${navActive ? "active" : ""}`}>
+    <nav className={`navbar ${navActive ? 'active' : ''}`}>
       <div>
-        <img src="./img/logo.svg" alt="Logoipsum" />
+        <img src="./img/logo.svg" alt="Michael De Lima" />
       </div>
       <a
-        className={`nav__hamburger ${navActive ? "active" : ""}`}
+        className={`nav__hamburger ${navActive ? 'active' : ''}`}
         onClick={toggleNav}
       >
         <span className="nav__hamburger__line"></span>
         <span className="nav__hamburger__line"></span>
         <span className="nav__hamburger__line"></span>
       </a>
-      <div className={`navbar--items ${navActive ? "active" : ""}`}>
+      <div className={`navbar--items ${navActive ? 'active' : ''}`}>
         <ul>
           <li>
             <Link
@@ -58,7 +58,7 @@ function Navbar() {
               to="heroSection"
               className="navbar--content"
             >
-              Home
+              Inicio
             </Link>
           </li>
           <li>
@@ -72,7 +72,7 @@ function Navbar() {
               to="MyPortfolio"
               className="navbar--content"
             >
-              Portfolio
+              Serviços
             </Link>
           </li>
           <li>
@@ -86,7 +86,7 @@ function Navbar() {
               to="AboutMe"
               className="navbar--content"
             >
-              About Me
+              Sobre mim
             </Link>
           </li>
           <li>
@@ -100,7 +100,7 @@ function Navbar() {
               to="testimonial"
               className="navbar--content"
             >
-              Testimonials
+              Depoimentos
             </Link>
           </li>
         </ul>
@@ -115,10 +115,10 @@ function Navbar() {
         to="Contact"
         className="btn btn-outline-primary"
       >
-        Contact Me
+        Contato
       </Link>
     </nav>
-  );
+  )
 }
 
-export default Navbar;
+export default Navbar
