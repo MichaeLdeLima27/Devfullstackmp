@@ -3,11 +3,10 @@ export default function HeroSection() {
     <section id="heroSection" className="hero--section">
       <div className="hero--section--content--box">
         <div className="hero--section--content">
-          <p className="section--title">Olá, Sou Michael De Lima</p>
           <h1 className="hero--section--title">
             <span className="hero--section-title--color">
-              Desenvolvedor Fullstack
-            </span>{' '}
+              Desenvolvedor <span className="hero--highlight">Fullstack</span>
+            </span>
             <p className="tech-stack">
               React | Node.js | JavaScript | TypeScript
             </p>
