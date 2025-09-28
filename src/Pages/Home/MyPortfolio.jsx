@@ -5,8 +5,8 @@ export default function MyPortfolio() {
     <section className="portfolio--section" id="MyPortfolio">
       <div className="portfolio--container-box">
         <div className="portfolio--container">
-          <p className="sub--title">Recent Projects</p>
-          <h2 className="section--heading">My Portfolio</h2>
+          <p className="sub--title">Projetos Recentes</p>
+          <h2 className="section--heading">Escolha seu modelo!</h2>
         </div>
         <div>
           <button className="btn btn-github">
@@ -24,7 +24,7 @@ export default function MyPortfolio() {
                 fill="currentColor"
               />
             </svg>
-            Visit My GitHub
+            Conheça Alguns projetos
           </button>
         </div>
       </div>

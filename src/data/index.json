@@ -4,25 +4,25 @@
       "id": "1",
       "src": "./img/product-chain-1.png",
       "title": "Front-End",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique"
+      "description": "Criação de interfaces modernas, responsivas e otimizadas, garantindo uma navegação rápida e intuitiva em qualquer dispositivo."
     },
     {
       "id": "2",
       "src": "./img/tag-1.png",
       "title": "Back-End",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique"
+      "description": "Desenvolvimento de sistemas robustos e seguros, com APIs escaláveis e integração eficiente com bancos de dados."
     },
     {
       "id": "3",
       "src": "./img/feather-pen-2.png",
       "title": "UI & UX Design",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique"
+      "description": "Transformação de ideias em experiências digitais funcionais e atraentes, unindo usabilidade e design estratégico."
     },
     {
       "id": "4",
       "src": "./img/feather-pen-1.png",
-      "title": "Webflow Development",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique"
+      "title": "Manutenção & Suporte",
+      "description": "Atualização, otimização e suporte contínuo para manter sistemas e sites sempre performáticos."
     }
   ],
   "portfolio": [
@@ -48,30 +48,31 @@
       "link": "View In Github"
     }
   ],
-  "testimonial": [
-    {
-      "id": "1",
-      "count": "5",
-      "src": "./img/avatar-image.png",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
-      "author_name": "Dianne Russel",
-      "author_designation": "Starbucks"
-    },
-    {
-      "id": "2",
-      "count": "5",
-      "src": "./img/avatar-image-1.png",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
-      "author_name": "Kristin Watson",
-      "author_designation": "Louis Vuitton"
-    },
-    {
-      "id": "3",
-      "count": "5",
-      "src": "./img/avatar-image-2.png",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
-      "author_name": "Kathryn Murphy",
-      "author_designation": "McDonald's"
-    }
-  ]
+"faq": [
+  {
+    "id": "1",
+    "question": "Quais informações devo enviar sobre meu projeto?",
+    "answer": "Envie detalhes do seu negócio, objetivos do site, referências visuais e funcionalidades desejadas."
+  },
+  {
+    "id": "2",
+    "question": "Preciso fornecer conteúdo pronto?",
+    "answer": "Sim, textos, imagens e logotipos ajudam a acelerar a produção e garantem resultados precisos."
+  },
+  {
+    "id": "3",
+    "question": "Posso solicitar alterações depois do início do projeto?",
+    "answer": "Sim! Durante o desenvolvimento há espaço para ajustes conforme seu feedback."
+  },
+  {
+    "id": "4",
+    "question": "Quais dados técnicos devo fornecer?",
+    "answer": "Se houver integrações com APIs, sistemas ou ferramentas externas, forneça documentação e acessos necessários."
+  },
+  {
+    "id": "5",
+    "question": "Como organizar minhas prioridades e expectativas?",
+    "answer": "Liste as funcionalidades mais importantes, prazos desejados e exemplos de referências para alinhar expectativas."
+  }
+]
 }
