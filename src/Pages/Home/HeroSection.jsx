@@ -1,42 +1,75 @@
 export default function HeroSection() {
   return (
     <section id="heroSection" className="hero--section">
-      <div className="hero--section--content--box">
-        <div className="hero--section--content">
-          <div className="hero--logo">
-            <img
-              src="./img/logoipsum-custom-logo.png"
-              alt="Michael De Lima"
-              className="navbar__logo"
-            />
-          </div>
-          <h1 className="hero--section--title1">
-            <span className="hero--section-title--color">
-              Criação De <span className="hero--highlight">Landing Page</span>
-            </span>
-            <p className="tech-stack">
-              Tenha uma Landing Page perfeita para ter <br />
-              mais conversão e vendas.
-            </p>
-          </h1>
-          <p className="hero--section-description">
-            Gere mais leads e mais vendas para seus negócios. Tenha uma Landing
-            Page de alta conversão para oferecer seus produtos e serviços no
-            Google, Instagram e Facebook.
-          </p>
+      {/* Texto */}
+      <div className="hero--section--text">
+        {/* Logo */}
+        <div className="hero--logo">
+          <img
+            src="./img/logoipsum-custom-logo.png"
+            alt="Michael De Lima"
+            className="navbar__logo"
+          />
         </div>
+
+        {/* Título e subtítulo */}
+        <h1 className="hero--section--title1">
+          <span className="hero--section-title--color">
+            Criação De <span className="hero--highlight">Landing Page</span>
+          </span>
+        </h1>
+
+        <p className="tech-stack">
+          Tenha uma Landing Page perfeita para ter <br />
+          mais conversão e vendas.
+        </p>
+
+        <p className="hero--section-description">
+          Gere mais leads e mais vendas para seus negócios. Tenha uma Landing
+          Page de alta conversão para oferecer seus produtos e serviços no
+          Google, Instagram e Facebook.
+        </p>
+
+        {/* Botão CTA */}
         <button className="btn btn-primary">
           Quero criar uma Landing Page
         </button>
+
+        {/* Carrossel de keywords */}
+        <div className="hero-keywords-container">
+          <div className="keywords-track">
+            <span>Criação de Landing Pages</span>
+            <span>Sites Profissionais</span>
+            <span>Marketing para Pequenos Negócios</span>
+            <span>Otimização no Google Meu Negócio</span>
+            <span>Tráfego Pago com Google Ads</span>
+            <span>Gestão de Anúncios no Meta Ads</span>
+            <span>Sites que Vendem Mais</span>
+            <span>Apresentação Profissional Online</span>
+            <span>Experiência Visual que Converte</span>
+            {/* duplicados para loop infinito */}
+            <span>Criação de Landing Pages</span>
+            <span>Sites Profissionais</span>
+            <span>Marketing para Pequenos Negócios</span>
+            <span>Otimização no Google Meu Negócio</span>
+            <span>Tráfego Pago com Google Ads</span>
+            <span>Gestão de Anúncios no Meta Ads</span>
+            <span>Sites que Vendem Mais</span>
+            <span>Apresentação Profissional Online</span>
+            <span>Experiência Visual que Converte</span>
+          </div>
+        </div>
       </div>
-      <div className="hero--section--img">
-        <img src="./img/michelmp1.png" alt="Section" />
+
+      {/* Imagem e ícones sociais */}
+      <div className="hero--section--media">
+        <img src="/img/michelmp1.png" alt="Michael De Lima" />
         <div className="hero--social--icon2">
           <ul>
+            {/* Facebook */}
             <li>
               <a
                 href="https://www.facebook.com/"
-                className="navbar--content"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -54,10 +87,10 @@ export default function HeroSection() {
                 </svg>
               </a>
             </li>
+            {/* Instagram */}
             <li>
               <a
                 href="https://www.instagram.com/"
-                className="navbar--content"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -77,10 +110,10 @@ export default function HeroSection() {
                 </svg>
               </a>
             </li>
+            {/* GitHub */}
             <li>
               <a
                 href="https://github.com/MichaeLdeLima27"
-                className="navbar--content"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -93,31 +126,31 @@ export default function HeroSection() {
                 >
                   <path
                     d="M12 .297c-6.63 0-12 5.373-12 12
-            0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577
-            0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61
-            -.546-1.387-1.333-1.757-1.333-1.757-1.09-.744.083-.729.083-.729
-            1.205.084 1.84 1.237 1.84 1.237 1.07 1.835 2.807 1.304 3.492.997
-            .108-.776.418-1.305.762-1.605-2.665-.3-5.466-1.332-5.466-5.93
-            0-1.31.467-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176
-            0 0 1.005-.322 3.3 1.23a11.48 11.48 0 0 1 3.003-.404
-            c1.02.005 2.045.138 3.003.404 2.28-1.552 3.285-1.23
-            3.285-1.23 .645 1.653.24 2.873.12 3.176
-            .765.84 1.23 1.91 1.23 3.22
-            0 4.61-2.805 5.625-5.475 5.92
-            .42.36.81 1.096.81 2.22
-            0 1.606-.015 2.896-.015 3.286
-            0 .315.21.69.825.57
-            C20.565 22.092 24 17.592 24 12.297
-            c0-6.627-5.373-12-12-12"
+                  0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577
+                  0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61
+                  -.546-1.387-1.333-1.757-1.333-1.757-1.09-.744.083-.729.083-.729
+                  1.205.084 1.84 1.237 1.84 1.237 1.07 1.835 2.807 1.304 3.492.997
+                  .108-.776.418-1.305.762-1.605-2.665-.3-5.466-1.332-5.466-5.93
+                  0-1.31.467-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176
+                  0 0 1.005-.322 3.3 1.23a11.48 11.48 0 0 1 3.003-.404
+                  c1.02.005 2.045.138 3.003.404 2.28-1.552 3.285-1.23
+                  3.285-1.23 .645 1.653.24 2.873.12 3.176
+                  .765.84 1.23 1.91 1.23 3.22
+                  0 4.61-2.805 5.625-5.475 5.92
+                  .42.36.81 1.096.81 2.22
+                  0 1.606-.015 2.896-.015 3.286
+                  0 .315.21.69.825.57
+                  C20.565 22.092 24 17.592 24 12.297
+                  c0-6.627-5.373-12-12-12"
                     fill="var(--primary)"
                   />
                 </svg>
               </a>
             </li>
+            {/* Linkedin */}
             <li>
               <a
                 href="https://www.linkedin.com/in/michelap19/"
-                className="navbar--content"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -140,17 +173,6 @@ export default function HeroSection() {
           </ul>
         </div>
       </div>
-      <section className="hero-keywords">
-        <div className="keywords-wrapper">
-          <span>Tráfego Pago</span>
-          <span>Google Meu Negócio</span>
-          <span>Mentoria de Marketing</span>
-          <span>Landing Page</span>
-          <span>Google Ads</span>
-          <span>Meta Ads</span>
-          <span>Tráfego Pago</span>
-        </div>
-      </section>
     </section>
   )
 }

@@ -221,169 +221,118 @@ h2 {
 }
 /* Navbar Styler Ends */
 
-/* Hero Section Style */
 .hero--section {
-  margin-top: 20px;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  padding: 133.333px 85.333px 133.333px;
-  align-items: center;
+  display: flex;
   justify-content: space-between;
-  gap: 24px;
+  align-items: center;
+  padding: 100px 80px;
+  gap: 40px;
   background-color: var(--bg-shade);
-  overflow: hidden;
+  flex-wrap: wrap;
 }
 
-.hero--section--content-box {
+/* Texto */
+.hero--section--text {
+  flex: 1;
+  min-width: 300px;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  gap: 32px;
+  gap: 20px;
 }
 
-.hero--section--content {
+/* Imagem */
+.hero--section--media {
+  flex: 1;
+  min-width: 300px;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  gap: 21.333px;
-  animation: fadeInUp 1.2s ease forwards;
+  align-items: center;
+  position: relative;
 }
 
-.hero--section--content--box > button {
-  margin-top: 21.333px;
-}
-
-.hero--section--title1 {
-  font-size: 80px;
-  font-weight: 600;
-  line-height: 1.7; /* ajusta melhor a altura */
-  white-space: nowrap;
-  background: linear-gradient(90deg, #007bff, #00c6ff, #007bff);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-size: 300% 300%;
-  animation: gradientMove 6s ease infinite;
-  margin-right: 40px;
-  padding-bottom: 20px;
-  font-family: 'Poppins', sans-serif;
-}
-
-.hero--section-title--color {
-  font-size: 55px;   /* diminui o título */
-  font-weight: 500;
-  line-height: 1.2;
-  background: linear-gradient(90deg, #007bff, #00c6ff, #007bff);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-size: 300% 300%;
-  animation: gradientMove 6s ease infinite;
-}
-
-.hero--highlight {
-  font-size: inherit;   /* pega o mesmo tamanho do pai */
-  font-weight: 600;     /* só fica mais "forte" */
-}
-
-.hero--section-description {
-  font-family: 'Poppins', sans-serif;
-  font-size: 1.3rem; /* ~20px */
-  line-height: 1.1;
-  color: #333;
-  max-width: 700px;
-  margin: 1rem auto 0;
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeInUp 1.2s ease forwards;
-  animation-delay: 0.5s;
-  margin-right: 40px;
-  margin-bottom: 20px;
-  font-weight: bold; /* negrito */
-}
-
-.hero--section-description br {
-  margin-bottom: 0.5rem;
-}
-
-.hero--section--img {
-  display: flex;
-  animation: float 6s ease-in-out infinite;
-}
-
-.hero--section--img > img {
+.hero--section--media img {
   width: 100%;
-  height: auto;
+  max-width: 500px;
+  border-radius: 20px;
   object-fit: cover;
-  margin-right: 200px;
-  border-radius: 40%;
 }
+
 /* Ícones sociais */
 .hero--social--icon2 {
-  position: absolute; /* posiciona em relação à imagem */
-  top: 50%;           /* centraliza verticalmente */
-  right: 20px;       /* ajusta horizontalmente para ficar próximo da imagem (lado direito) */
+  position: absolute;
+  top: 50%;
+  right: -60px;
   transform: translateY(-50%);
   display: flex;
-  flex-direction: column; /* empilha em coluna */
-  gap: 26px;               /* espaço entre os ícones */
-  z-index: 10;             /* garante que fique na frente da imagem */
-  margin-bottom: 20px;
+  flex-direction: column;
+  gap: 26px;
+  z-index: 10;
 }
 
-/* Lista interna (ul) */
 .hero--social--icon2 ul {
   list-style: none;
   padding: 0;
   margin: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 36px;
-  align-items: center; /* centraliza os ícones horizontalmente */
 }
 
-/* Cada item da lista (li) */
-.hero--social--icon2 li {
-  display: flex;
-  align-items: center;
-}
-
-/* Links dentro dos itens */
-.hero--social--icon2 a {
+.hero--social--icon2 li a {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: transform 0.2s ease;
 }
 
-/* Hover nos links */
-.hero--social--icon2 a:hover {
-  transform: scale(1.1);
+/* Carrossel de keywords */
+.hero-keywords-container {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
 }
 
-/* ===== Animations ===== */
-@keyframes gradientMove {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+.keywords-track {
+  display: inline-block;
+  animation: scrollKeywords 30s linear infinite;
 }
 
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
+.keywords-track span {
+  display: inline-block;
+  margin-right: 50px;
+  font-weight: 600;
+  color: var(--primary);
+}
+
+@keyframes scrollKeywords {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* Responsivo */
+@media (max-width: 1024px) {
+  .hero--section {
+    flex-direction: column-reverse;
+    padding: 50px 20px;
+    gap: 30px;
   }
-  to {
-    opacity: 1;
-    transform: translateY(0);
+
+  .hero--section--media {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .hero--social--icon2 {
+    position: static;
+    transform: none;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .keywords-track {
+    animation: none;
   }
 }
 
-@keyframes float {
-  0% { transform: translateY(0); }
-  50% { transform: translateY(-15px); }
-  100% { transform: translateY(0); }
-}
+
+
 
 .footer--social--icon2 ul {
   display: flex;
@@ -995,54 +944,131 @@ input[type="checkbox"] {
   }
 }
 
-.tech-stack {
-  font-size: 2rem;
-  font-weight: bold;
-  color: var(--darkblue);
-  font-family: 'Poppins', sans-serif;
-  line-height: 1;
+/* CSS */
+:root{
+  --container-max: 1200px;
+  --gap: 2rem;
+  --speed: 22s; /* ajuste a velocidade aqui */
 }
 
-.hero-keywords {
-  overflow: hidden; /* esconde o que sair da tela */
-  white-space: nowrap;
+/* hero inteira (background, padding etc) */
+.hero-keywords{
+  width: 100%;
+  background: #f9f9f9;
   padding: 1rem 0;
-  background-color: #f5f5f5; /* opcional */
+  border-top: 2px solid var(--primary);
+  border-bottom: 2px solid var(--primary);
 }
 
-.keywords-wrapper {
-  display: inline-block;
-  animation: moveKeywords 15s linear infinite;
+/* container centralizado:  limita largura da landing page */
+.keywords-container{
+  max-width: var(--container-max);
+  width: 90%;
+  margin: 0 auto;
+  overflow: hidden;        /* ESSE é o ponto: esconde o que ultrapassar */
+  box-sizing: border-box;
 }
 
-.keywords-wrapper span {
+/* track que contém dois blocos idênticos (para loop contínuo) */
+.keywords-track{
+  display: flex;
+  align-items: center;
+  gap: var(--gap);
+  /* animação: move todo o track de 0 => -50% (como temos 2 blocos iguais) */
+  animation: scroll linear infinite;
+  animation-duration: var(--speed);
+  will-change: transform;
+}
+
+/* bloco de palavras (cada bloco contém toda a sequência) */
+.keywords{
+  display: flex;
+  gap: var(--gap);
+  white-space: nowrap; /* não quebra linha */
+  flex-shrink: 0;      /* evita encolher e causar wrap */
+}
+
+/* itens */
+.keywords span{
   display: inline-block;
-  margin-right: 1rem;
-  position: relative;
-  font-weight: 600;
   font-family: 'Poppins', sans-serif;
-  font-size: 1.4rem;
-  color: var(--darkblue);
+  font-weight: 600;
+  font-size: 1.25rem;
+  white-space: nowrap;
 }
 
-.keywords-wrapper span::after {
-  content: "•"; /* bolinha separadora */
-  margin-left: 1rem;
+/* separador solicitado: " *" */
+.keywords span::after{
+  content: " *";
+  margin-left: .6rem;
+  opacity: .9;
   color: var(--primary);
+  font-weight: 700;
 }
 
-.keywords-wrapper span:last-child::after {
-  content: ""; /* remove bolinha do último */
+/* remove separador do último de cada bloco duplicado (fica limpo) */
+.keywords span:last-child::after{
+  content: "";
 }
 
-/* animação horizontal */
-@keyframes moveKeywords {
-  0% {
-    transform: translateX(100%);
+/* animação: move metade da largura total (por isso duplicamos) */
+@keyframes scroll{
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* responsividade */
+@media (max-width: 900px){
+  :root { --speed: 18s; } /* opcional: mais rápido em telas pequenas */
+  .keywords span { font-size: 1rem; }
+  .keywords-container { width: 95%; }
+}
+
+/* Container do carrossel */
+.hero-keywords-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  margin-top: 40px;
+  white-space: nowrap; /* impede quebra de linha */
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  padding: 15px 0;
+  background: #fafafa;
+}
+
+/* Faixa rolando */
+.keywords-track {
+  display: inline-block;
+  white-space: nowrap;
+  animation: scroll 35s linear infinite;
+}
+
+/* Estilo dos textos */
+.keywords-track span {
+  display: inline-block;
+  margin: 0 25px; /* espaçamento entre palavras */
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--dark);
+  position: relative;
+}
+
+/* Adiciona o separador * */
+.keywords-track span::after {
+  content: " *";
+  margin-left: 25px;
+  color: var(--primary);
+  font-weight: bold;
+}
+
+/* Animação infinita */
+@keyframes scroll {
+  from {
+    transform: translateX(0%);
   }
-  100% {
-    transform: translateX(-100%);
+  to {
+    transform: translateX(-50%);
   }
 }
-
 /* Responsive Screens Ends*/
