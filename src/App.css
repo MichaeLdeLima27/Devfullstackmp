@@ -180,6 +180,7 @@ h2 {
 
 /* Navbar Style Start */
 .navbar {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -190,7 +191,7 @@ h2 {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 1;
+  z-index: 10;
 }
 .navbar--items > ul {
   list-style: none;
@@ -218,86 +219,190 @@ h2 {
 .navbar__logo {
   width: 190px;
   height: auto;
+  cursor: pointer;
+  margin-top: 30px;
 }
 /* Navbar Styler Ends */
-
+/* ========================= HERO SECTION ========================= */
 .hero--section {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 100px 80px;
-  gap: 40px;
-  background-color: var(--bg-shade);
+  padding: 80px 60px;
   flex-wrap: wrap;
+  gap: 30px;
+  background-color: var(--bg-shade);
 }
 
-/* Texto */
+/* ========================= TEXTO ========================= */
 .hero--section--text {
   flex: 1;
   min-width: 300px;
   display: flex;
   flex-direction: column;
   gap: 20px;
+  font-family: 'Roboto', sans-serif;
+  max-width: 700px; /* permite o título completo */
 }
 
-/* Imagem */
+/* ========================= TÍTULO PRINCIPAL ========================= */
+.hero--section--title1 {
+  font-size: 60px; /* diminuiu para caber */
+  font-weight: bold;
+  line-height: 1.5;
+  background: linear-gradient(90deg, #007bff, #00c6ff, #007bff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 300% 300%;
+  animation: gradientMove 6s ease infinite;
+  font-family: 'Roboto', sans-serif;
+  margin-top: 20px;
+}
+
+.hero--section-title--color {
+  font-weight: 500;
+}
+
+.hero--highlight {
+  font-weight: 700;
+}
+
+/* ========================= SUBTÍTULO ========================= */
+.tech-stack {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--darkblue);
+  line-height: 1.3;
+  margin-top: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* ========================= DESCRIÇÃO ========================= */
+.hero--section-description {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: #333;
+  font-weight: 700;
+  margin-top: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* ========================= BOTÃO CTA ========================= */
+.btn.btn-primary {
+  margin-top: 10px;
+  padding: 24px 30px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  border-radius: 8px;
+  background-color: #007bff; /* azul inicial */
+  color: #fff; /* texto branco */
+  border: none;
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+  display: flex;               /* centraliza conteúdo */
+  justify-content: center;     /* horizontal */
+  align-items: center;         /* vertical */
+  gap: 10px;                   /* espaço entre texto e seta */
+  overflow: hidden;
+}
+
+/* Texto piscando */
+.btn.btn-primary span.text {
+  animation: blinkText 1.2s infinite;
+  display: inline-block;
+}
+
+/* Seta azul */
+.btn.btn-primary span.arrow {
+  color: #00c6ff; /* azul claro */
+  transition: color 0.3s ease;
+}
+
+/* Hover: botão branco, texto azul escuro, seta azul escuro */
+.btn.btn-primary:hover {
+  background-color: #003366; /* azul escuro */
+}
+
+.btn.btn-primary:hover span.text {
+  color: #003366; /* azul escuro */
+}
+
+.btn.btn-primary:hover span.arrow {
+  color: #003366; /* mesma cor do texto no hover */
+}
+
+/* Keyframes de piscada do texto */
+@keyframes blinkText {
+  0%, 50%, 100% {
+    opacity: 1;
+  }
+  25%, 75% {
+    opacity: 0.5;
+  }
+}
+
+
+/* ========================= IMAGEM E ÍCONES ========================= */
 .hero--section--media {
   flex: 1;
-  min-width: 300px;
+  min-width: 500px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
+  align-items: center; /* mantém imagem e ícones na mesma linha */
+  gap: 20px;
 }
 
 .hero--section--media img {
   width: 100%;
-  max-width: 500px;
-  border-radius: 20px;
+  max-width: 550px;
+  border-radius: 50%;
   object-fit: cover;
-}
-
-/* Ícones sociais */
-.hero--social--icon2 {
-  position: absolute;
-  top: 50%;
-  right: -60px;
-  transform: translateY(-50%);
-  display: flex;
-  flex-direction: column;
-  gap: 26px;
-  z-index: 10;
+  animation: float 6s ease-in-out infinite;
+  margin-top: 150px;
 }
 
 .hero--social--icon2 ul {
   list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.hero--social--icon2 li a {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 50px;
 }
 
-/* Carrossel de keywords */
+/* ========================= CARROSSEL PALAVRAS ========================= */
 .hero-keywords-container {
+  width: 100%;
+  position: relative;
   overflow: hidden;
   white-space: nowrap;
-  width: 100%;
+  margin: 10px 0 0 0; /* só 10px de margem em cima */
+  padding: 10px 0; /* mantém um pequeno espaçamento interno */
+  background-color: rgba(255,255,255,0.05); /* opcional */
 }
 
 .keywords-track {
-  display: inline-block;
-  animation: scrollKeywords 30s linear infinite;
+  display: inline-flex;
+  gap: 50px;
+  animation: scrollKeywords 25s linear infinite;
+  width: max-content;
 }
 
 .keywords-track span {
-  display: inline-block;
-  margin-right: 50px;
   font-weight: 600;
   color: var(--primary);
+  font-size: 1rem;
+}
+
+/* ========================= ANIMAÇÕES ========================= */
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes float {
+  0%,100% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
 }
 
 @keyframes scrollKeywords {
@@ -305,12 +410,90 @@ h2 {
   100% { transform: translateX(-50%); }
 }
 
-/* Responsivo */
+/* ========================= RESPONSIVO ========================= */
+@media (max-width: 1024px) {
+  .hero--section {
+    flex-direction: column;
+    padding: 60px 40px;
+  }
+
+  .hero--section--media {
+    flex-direction: row; /* imagem + ícones em linha */
+    justify-content: center;
+    gap: 15px;
+    margin-top: 30px;
+  }
+
+  .hero--section--title1 {
+    font-size: 42px;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero--section {
+    padding: 40px 20px;
+  }
+
+  .hero--section--title1 {
+    font-size: 36px;
+    text-align: center;
+  }
+
+  .tech-stack,
+  .hero--section-description {
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  .hero--section--media {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+/* ========================= ANIMAÇÕES ========================= */
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+@keyframes scrollKeywords {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* ========================= RESPONSIVO ========================= */
 @media (max-width: 1024px) {
   .hero--section {
     flex-direction: column-reverse;
     padding: 50px 20px;
     gap: 30px;
+  }
+
+  .hero--section--title1 {
+    font-size: 48px;
+    white-space: normal;
+  }
+
+  .tech-stack {
+    font-size: 1.4rem;
+  }
+
+  .hero--section-description {
+    font-size: 1rem;
+    line-height: 1.5;
   }
 
   .hero--section--media {
@@ -330,9 +513,6 @@ h2 {
     animation: none;
   }
 }
-
-
-
 
 .footer--social--icon2 ul {
   display: flex;
