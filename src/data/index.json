@@ -1,30 +1,28 @@
 {
-  "skills": [
+"skills": [
     {
       "id": "1",
-      "src": "./img/product-chain-1.png",
-      "title": "Front-End",
-      "description": "Criação de interfaces modernas, responsivas e otimizadas, garantindo uma navegação rápida e intuitiva em qualquer dispositivo."
+      "src": "./img/landing-page-1.png",
+      "title": "Landing Page Personalizada",
+      "description": "Sua Landing Page será totalmente personalizada e profissional, criada sob medida para seu serviço ou produto, garantindo uma identidade visual única e alinhada com seus objetivos."
     },
     {
       "id": "2",
-      "src": "./img/tag-1.png",
-      "title": "Back-End",
-      "description": "Desenvolvimento de sistemas robustos e seguros, com APIs escaláveis e integração eficiente com bancos de dados."
+      "src": "./img/machine-sales.png",
+      "title": "Máquina de Vendas",
+      "description": "Desenvolvida nos mínimos detalhes para gerar mais conversão de leads e clientes potenciais, transformando sua página em uma verdadeira máquina de vendas."
     },
     {
       "id": "3",
-      "src": "./img/feather-pen-2.png",
-      "title": "UI & UX Design",
-      "description": "Transformação de ideias em experiências digitais funcionais e atraentes, unindo usabilidade e design estratégico."
-    },
-    {
-      "id": "4",
-      "src": "./img/feather-pen-1.png",
-      "title": "Manutenção & Suporte",
-      "description": "Atualização, otimização e suporte contínuo para manter sistemas e sites sempre performáticos."
+      "src": "./img/ads-optimized.png",
+      "title": "Perfeita para Anúncios",
+      "description": "Projetada para anúncios no Google Ads e Meta (Facebook/Instagram), rápida e otimizada para conversão, aumentando o retorno sobre investimento das suas campanhas."
     }
   ],
+  "cta": {
+    "text": "Criar Landing Page",
+    "link": "#contact"
+  },
   "portfolio": [
     {
       "id": "1",
@@ -52,27 +50,28 @@
   {
     "id": "1",
     "question": "Quais informações devo enviar sobre meu projeto?",
-    "answer": "Envie detalhes do seu negócio, objetivos do site, referências visuais e funcionalidades desejadas."
+    "answer": "Forneça detalhes abrangentes sobre o seu negócio, incluindo o segmento de atuação, objetivos principais do site, público-alvo e referências visuais que você aprecia. Além disso, especifique funcionalidades desejadas, exemplos de sites que você considera inspiradores e quaisquer restrições ou preferências técnicas que possua."
   },
   {
     "id": "2",
     "question": "Preciso fornecer conteúdo pronto?",
-    "answer": "Sim, textos, imagens e logotipos ajudam a acelerar a produção e garantem resultados precisos."
+    "answer": "Sim. Ter textos, imagens, logotipos e outros materiais prontos agiliza o desenvolvimento e garante que o resultado final esteja alinhado com a sua visão. Caso não possua todo o conteúdo, podemos orientar sobre melhores práticas de produção e padronização visual."
   },
   {
     "id": "3",
     "question": "Posso solicitar alterações depois do início do projeto?",
-    "answer": "Sim! Durante o desenvolvimento há espaço para ajustes conforme seu feedback."
+    "answer": "Sim! Durante o desenvolvimento, há espaço para ajustes e refinamentos baseados no seu feedback. Recomendamos documentar as alterações desejadas de forma clara para otimizar o processo e evitar retrabalho, mantendo prazos e qualidade do projeto."
   },
   {
     "id": "4",
     "question": "Quais dados técnicos devo fornecer?",
-    "answer": "Se houver integrações com APIs, sistemas ou ferramentas externas, forneça documentação e acessos necessários."
+    "answer": "Se houver integrações com APIs, sistemas internos ou ferramentas externas, forneça documentação detalhada, credenciais de acesso e exemplos de funcionamento. Quanto mais completo for o material técnico, mais eficiente será a implementação e menor será a necessidade de ajustes posteriores."
   },
   {
     "id": "5",
     "question": "Como organizar minhas prioridades e expectativas?",
-    "answer": "Liste as funcionalidades mais importantes, prazos desejados e exemplos de referências para alinhar expectativas."
+    "answer": "Elabore uma lista das funcionalidades mais importantes e diferencie entre o que é essencial e o que é desejável. Defina prazos claros, prioridades e referências visuais que reflitam seu objetivo final. Esse alinhamento inicial facilita a comunicação, garante entregas consistentes e ajuda a gerenciar expectativas durante todo o projeto."
   }
 ]
+
 }

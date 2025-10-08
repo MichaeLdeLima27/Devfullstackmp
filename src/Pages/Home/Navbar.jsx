@@ -101,10 +101,10 @@ function Navbar() {
               smooth={true}
               offset={-70}
               duration={500}
-              to="testimonial"
+              to="faq"
               className="navbar--content"
             >
-              Depoimentos
+              Imformações
             </Link>
           </li>
         </ul>

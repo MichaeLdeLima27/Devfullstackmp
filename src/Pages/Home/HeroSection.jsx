@@ -36,7 +36,6 @@ export default function HeroSection() {
 
           <button className="btn btn-primary">
             <span>Quero criar uma Landing Page</span>
-            <span className="arrow">→</span>
           </button>
         </div>
 

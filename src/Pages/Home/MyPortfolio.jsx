@@ -24,7 +24,7 @@ export default function MyPortfolio() {
                 fill="currentColor"
               />
             </svg>
-            Conheça Alguns projetos
+            Faça um orçamento!
           </button>
         </div>
       </div>

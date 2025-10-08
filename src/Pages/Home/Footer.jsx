@@ -69,10 +69,10 @@ function Footer() {
                 smooth={true}
                 offset={-70}
                 duration={500}
-                to="testimonial"
+                to="faq"
                 className="text-md"
               >
-                Testemunhos
+                Imformações
               </Link>
             </li>
           </ul>
@@ -188,7 +188,9 @@ function Footer() {
       </div>
       <hr className="divider" />
       <div className="footer--content--container">
-        <p className="footer--content">Produzido por Michael De Lima </p>
+        <p className="footer--content">
+          Desenvolvedor Michael De Lima - UX/UI Ketlyn De Lima
+        </p>
         <div className="footer--social--icon">
           <ul>
             <li>
