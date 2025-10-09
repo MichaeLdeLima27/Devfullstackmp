@@ -41,11 +41,7 @@ export default function HeroSection() {
 
         {/* Imagem e ícones sociais */}
         <div className="hero--section--media">
-          <img
-            src="/img/michelmp1.png"
-            alt="Michael De Lima"
-            className="hero--media--img"
-          />
+          <img src="/img/michelmp1.png" alt="Michael" className="hero--media--img" />
           <div className="hero--social--icon2">
             <ul>
               {/* Facebook */}

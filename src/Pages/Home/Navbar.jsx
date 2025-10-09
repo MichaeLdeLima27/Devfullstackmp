@@ -4,31 +4,22 @@ import { Link } from 'react-scroll'
 function Navbar() {
   const [navActive, setNavActive] = useState(false)
 
-  const toggleNav = () => {
-    setNavActive(!navActive)
-  }
-
-  const closeMenu = () => {
-    setNavActive(false)
-  }
+  const toggleNav = () => setNavActive(!navActive)
+  const closeMenu = () => setNavActive(false)
 
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth <= 500) {
-        closeMenu
+        closeMenu() // <--- função chamada corretamente
       }
     }
-
     window.addEventListener('resize', handleResize)
-
-    return () => {
-      window.removeEventListener('resize', handleResize)
-    }
+    return () => window.removeEventListener('resize', handleResize)
   }, [])
 
   useEffect(() => {
     if (window.innerWidth <= 1200) {
-      closeMenu
+      closeMenu() // <--- função chamada corretamente
     }
   }, [])
 
@@ -41,10 +32,7 @@ function Navbar() {
           className="navbar__logo1"
         />
       </div>
-      <a
-        className={`nav__hamburger ${navActive ? 'active' : ''}`}
-        onClick={toggleNav}
-      >
+      <a className={`nav__hamburger ${navActive ? 'active' : ''}`} onClick={toggleNav}>
         <span className="nav__hamburger__line"></span>
         <span className="nav__hamburger__line"></span>
         <span className="nav__hamburger__line"></span>
@@ -104,7 +92,7 @@ function Navbar() {
               to="faq"
               className="navbar--content"
             >
-              Imformações
+              Informações
             </Link>
           </li>
         </ul>
