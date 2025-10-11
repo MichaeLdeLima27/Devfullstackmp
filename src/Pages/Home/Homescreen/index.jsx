@@ -1,39 +1,47 @@
-import AboutMe from '../AboutMe'
-import ContactMe from '../ContactMe'
-import Footer from '../Footer'
-import HeroSection from '../HeroSection'
-import MyPortfolio from '../MyPortfolio'
-import MySkills from '../MySkills'
-import Testimonial from '../Testimonials'
+import HeroSection from '../HeroSection';
+import MySkills from '../MySkills';
+import AboutMe from '../AboutMe';
+import MyPortfolio from '../MyPortfolio';
+import Testimonial from '../Testimonials';
+import ContactMe from '../ContactMe';
+import Footer from '../Footer';
 
 export default function Home() {
   return (
     <>
+      {/* Hero Section */}
       <section id="heroSection">
         <HeroSection />
       </section>
 
-      <section id="MySkills">
+      {/* Skills Section */}
+      <section id="mySkills">
         <MySkills />
       </section>
 
-      <section id="AboutMe">
+      {/* About Me Section */}
+      <section id="aboutMe">
         <AboutMe />
       </section>
 
-      <section id="MyPortfolio">
+      {/* Portfolio Section */}
+      <section id="myPortfolio">
         <MyPortfolio />
       </section>
 
-      <section id="faq">
-        <Testimonial /> {/* Componente FAQ */}
+      {/* Testimonials Section */}
+      <section id="testimonials">
+        <Testimonial />
       </section>
 
-      <section id="Contact">
+      {/* Contact Section */}
+      <section id="contact">
         <ContactMe />
       </section>
 
+      {/* Footer */}
       <Footer />
     </>
-  )
+  );
 }
+

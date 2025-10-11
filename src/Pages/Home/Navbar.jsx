@@ -1,107 +1,74 @@
 import { useState, useEffect } from 'react'
 import { Link } from 'react-scroll'
 
-function Navbar() {
+export default function Navbar() {
   const [navActive, setNavActive] = useState(false)
+  const [scrolled, setScrolled] = useState(false)
 
   const toggleNav = () => setNavActive(!navActive)
   const closeMenu = () => setNavActive(false)
 
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth <= 500) {
-        closeMenu() // <--- função chamada corretamente
-      }
+      if (window.innerWidth <= 1200) closeMenu()
     }
     window.addEventListener('resize', handleResize)
     return () => window.removeEventListener('resize', handleResize)
   }, [])
 
   useEffect(() => {
-    if (window.innerWidth <= 1200) {
-      closeMenu() // <--- função chamada corretamente
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setScrolled(true)
+      } else {
+        setScrolled(false)
+      }
     }
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
   return (
-    <nav className={`navbar ${navActive ? 'active' : ''}`}>
-      <div>
-        <img
-          src="/logoipsum-custom-logo-2.png"
-          alt="Michael De Lima"
-          className="navbar__logo1"
-        />
+    <nav className={`navbar ${scrolled ? 'navbar--scrolled' : ''} ${navActive ? 'active' : ''}`}>
+      <div className="navbar__logo">
+        <img src="/logoipsum-custom-logo-2.png" alt="Michael De Lima" />
       </div>
-      <a className={`nav__hamburger ${navActive ? 'active' : ''}`} onClick={toggleNav}>
-        <span className="nav__hamburger__line"></span>
-        <span className="nav__hamburger__line"></span>
-        <span className="nav__hamburger__line"></span>
-      </a>
+
+      <button className={`nav__hamburger ${navActive ? 'active' : ''}`} onClick={toggleNav}>
+        <span className="line"></span>
+        <span className="line"></span>
+        <span className="line"></span>
+      </button>
+
       <div className={`navbar--items ${navActive ? 'active' : ''}`}>
         <ul>
           <li>
-            <Link
-              onClick={closeMenu}
-              activeClass="navbar--active-content"
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={500}
-              to="heroSection"
-              className="navbar--content"
-            >
-              Inicio
+            <Link onClick={closeMenu} spy smooth offset={-70} duration={500} to="heroSection">
+              Início
             </Link>
           </li>
           <li>
-            <Link
-              onClick={closeMenu}
-              activeClass="navbar--active-content"
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={500}
-              to="MyPortfolio"
-              className="navbar--content"
-            >
+            <Link onClick={closeMenu} spy smooth offset={-70} duration={500} to="MyPortfolio">
               Serviços
             </Link>
           </li>
           <li>
-            <Link
-              onClick={closeMenu}
-              activeClass="navbar--active-content"
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={500}
-              to="AboutMe"
-              className="navbar--content"
-            >
+            <Link onClick={closeMenu} spy smooth offset={-70} duration={500} to="AboutMe">
               Sobre mim
             </Link>
           </li>
           <li>
-            <Link
-              onClick={closeMenu}
-              activeClass="navbar--active-content"
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={500}
-              to="faq"
-              className="navbar--content"
-            >
+            <Link onClick={closeMenu} spy smooth offset={-70} duration={500} to="faq">
               Informações
             </Link>
           </li>
         </ul>
       </div>
+
       <Link
         onClick={closeMenu}
-        activeClass="navbar--active-content"
-        spy={true}
-        smooth={true}
+        spy
+        smooth
         offset={-70}
         duration={500}
         to="Contact"
@@ -112,5 +79,3 @@ function Navbar() {
     </nav>
   )
 }
-
-export default Navbar

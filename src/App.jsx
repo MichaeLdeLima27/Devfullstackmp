@@ -1,11 +1,14 @@
-import './App.css'
-import Home from './pages/Home/Homescreen'
+import React from 'react'
+import { BrowserRouter as Router } from 'react-router-dom'
+import Navbar from "./pages/Home/Navbar";
+import Home from "./pages/Home/Homescreen";
 
 function App() {
   return (
-    <div>
+    <Router>
+      <Navbar />
       <Home />
-    </div>
+    </Router>
   )
 }
 
