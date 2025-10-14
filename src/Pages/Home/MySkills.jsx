@@ -59,10 +59,14 @@ export default function MySkills() {
           </div>
         </div>
       </div>
-
-      <div className="skills--section--cta">
-        <button className="btn btn-primary">Criar Landing Page</button>
-      </div>
+            <a
+  href="https://wa.me/5541987604043"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="btn-primary"
+>
+  <span>Quero criar uma Landing Page</span>
+</a>
     </section>
   )
 }

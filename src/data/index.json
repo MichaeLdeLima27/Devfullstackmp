@@ -33,10 +33,10 @@
     },
     {
       "id": "2",
-      "src": "./img/placeholder-image-1.png",
-      "title": "App Dashboard",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
-      "link": "View In Github"
+      "src": "./img/projeto1.mp4",
+      "title": "Site para pequenas empresas",
+      "description": "Ter um site profissional é essencial para pequenas empresas, pois amplia a visibilidade, transmite credibilidade e permite atrair novos clientes, funcionando como uma vitrine digital acessível 24 horas por dia",
+      "link": "https://projetoebac3-camping-por-do-sol-mp.vercel.app/"
     },
     {
       "id": "3",

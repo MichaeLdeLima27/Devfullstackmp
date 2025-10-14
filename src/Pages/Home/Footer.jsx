@@ -81,7 +81,7 @@ function Footer() {
           <ul>
             <li>
               <a
-                href="https://www.facebook.com/"
+                href="https://www.facebook.com/micheel.cwbrisa"
                 className="navbar--content"
                 target="_blank"
                 rel="noreferrer"
@@ -102,7 +102,7 @@ function Footer() {
             </li>
             <li>
               <a
-                href="https://www.instagram.com/"
+                href="https://www.instagram.com/michelap19?igsh=MWcxbW1nY3M3ejRsaw=="
                 className="navbar--content"
                 target="_blank"
                 rel="noreferrer"
@@ -125,7 +125,7 @@ function Footer() {
             </li>
             <li>
               <a
-                href="https://www.twitter.com/"
+                href="https://github.com/MichaeLdeLima27"
                 className="navbar--content"
                 target="_blank"
                 rel="noreferrer"
@@ -162,7 +162,7 @@ function Footer() {
             </li>
             <li>
               <a
-                href="https://www.linkedin.com/"
+                href="https://www.linkedin.com/in/michelap19/"
                 className="navbar--content"
                 target="_blank"
                 rel="noreferrer"
@@ -188,9 +188,26 @@ function Footer() {
       </div>
       <hr className="divider" />
       <div className="footer--content--container">
-        <p className="footer--content">
-          Desenvolvedor Michael De Lima - UX/UI Ketlyn De Lima
-        </p>
+      <p className="footer--content">
+  Desenvolvedor{' '}
+  <a
+    href="https://www.linkedin.com/in/michelap19/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="footer-link"
+  >
+    Michael De Lima
+  </a>{' '}
+  - UX/UI{' '}
+  <a
+    href="https://www.linkedin.com/in/ketlyn-ribeiro-alves-501694292/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="footer-link"
+  >
+    Ketlyn De Lima
+  </a>
+</p>
         <div className="footer--social--icon">
           <ul>
             <li>
