@@ -1,10 +1,10 @@
-import HeroSection from '../HeroSection';
-import MySkills from '../MySkills';
-import AboutMe from '../AboutMe';
-import MyPortfolio from '../MyPortfolio';
-import Testimonial from '../Testimonials';
-import ContactMe from '../ContactMe';
-import Footer from '../Footer';
+import HeroSection from '../HeroSection.jsx';
+import MySkills from '../MySkills.jsx';
+import AboutMe from '../AboutMe.jsx';
+import MyPortfolio from '../MyPortfolio.jsx';
+import Testimonial from '../Testimonials.jsx';
+import ContactMe from '../ContactMe.jsx';
+import Footer from '../Footer.jsx';
 
 export default function Home() {
   return (
