@@ -1,21 +1,15 @@
-import React from 'react'
-import { BrowserRouter as Router } from 'react-router-dom'
-import Navbar from "./pages/Home/Navbar"
-import Home from "./pages/Home/Homescreen"
+import React from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
+import Navbar from './pages/Home/Navbar.jsx';
+import Home from './pages/Home/Homescreen.jsx';
 
 function App() {
   return (
-    <Router
-      future={{
-        v7_startTransition: true,
-        v7_relativeSplatPath: true,
-      }}
-    >
+    <Router>
       <Navbar />
       <Home />
     </Router>
-  )
+  );
 }
 
-export default App
-
+export default App;
