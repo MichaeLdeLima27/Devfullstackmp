@@ -13,12 +13,12 @@ body {
 }
 
 :root {
-  --primary: #061442;       /* Azul principal, destaque */
+  --primary: #87533A;       /* Azul principal, destaque */
   --secondary: #f59e0b;     /* Laranja secundário */
   --text-color: #111;       /* Cor do texto principal */
   --text-secondary: #555;   /* Cor do texto secundário */
   --background: #f9f9f9;    /* Fundo claro padrão */
-  --accent: #0099ff;        /* Azul suave para botões e links */
+  --accent: #006A4E;        /* Azul suave para botões e links */
 }
 
 /* ======= NAVBAR ======= */
@@ -77,12 +77,12 @@ body {
   left: 0;
   width: 0;
   height: 2px;
-  background: #0099ff; /* azul suave */
+  background: #87533A; /* azul suave */
   transition: width 0.3s ease;
 }
 
 .navbar--items ul li a:hover {
-  color: #0099ff;
+  color: #87533A;
 }
 
 .navbar--items ul li a:hover::after {
@@ -91,8 +91,8 @@ body {
 
 /* ======= BOTÃO CONTATO ======= */
 .btn.btn-outline-primary {
-  color: #0099ff;
-  border: 1.5px solid #0099ff;
+  color: #87533A;
+  border: 1.5px solid #87533A;
   padding: 10px 22px;
   border-radius: 30px;
   font-size: 14px;
@@ -103,7 +103,7 @@ body {
 }
 
 .btn.btn-outline-primary:hover {
-  background: #0099ff;
+  background: #AB8573;
   color: #fff;
 }
 
@@ -239,8 +239,8 @@ body {
 }
 
 .btn-primary {
-  color: #0099ff;
-  border: 1.5px solid #0099ff;
+  color: #006A4E;
+  border: 1.5px solid #006A4E;
   padding: 32px 48px; /* um pouco maior */
   border-radius: 30px;
   font-size: 16px;
@@ -256,7 +256,7 @@ body {
 }
 
 .btn-primary:hover {
-  background: #0099ff;
+  background: #AB8573;
   color: #fff;
 }
 
@@ -293,7 +293,7 @@ body {
 
 .hero--social--icon2 {
   position: absolute;
-  right: -60px; /* ajusta conforme necessidade */
+  right: -90px; /* ajusta conforme necessidade */
   top: 50%;
   transform: translateY(-50%);
 }
@@ -305,7 +305,7 @@ body {
   gap: 1.5rem;
   padding: 0;
   margin: 0;
-  margin-right: 140px;
+  margin-right: 160px;
   margin-top: 120px;
 }
 
@@ -396,7 +396,7 @@ body {
   .hero--social--icon2 ul {
     flex-direction: row;
     gap: 1rem;
-    margin-right: 50px;
+    margin-right: 90px;
   }
 }
 
@@ -496,8 +496,8 @@ body {
   margin-top: 20px;
 }
 .btn-primary{
-  color: #0099ff;
-  border: 1.5px solid #0099ff;
+  color: #87533A;
+  border: 1.5px solid #87533A;
   padding: 22px 48px; /* um pouco maior */
   border-radius: 30px;
   font-size: 16px;
@@ -513,7 +513,7 @@ body {
 }
 
 .btn-primary:hover {
-  background: #0099ff;
+  background: #AB8573;
   color: #fff;
 }
 
@@ -664,8 +664,8 @@ body {
   padding: 12px 28px;
   font-size: 1rem;
   font-weight: 600;
-  color: #0099ff;
-  border: 2px solid #0099ff;
+  color: #87533A;
+  border: 2px solid #87533A;
   border-radius: 30px;
   background: transparent;
   cursor: pointer;
@@ -678,7 +678,7 @@ body {
 }
 
 .btn-github:hover {
-  background: #0099ff;
+  background: #AB8573;
   color: #fff;
 }
 
@@ -744,7 +744,7 @@ body {
   gap: 0.3rem;
   font-size: 0.9rem;
   font-weight: 600;
-  color: #0099ff;
+  color: #006A4E;
   cursor: pointer;
   transition: color 0.3s ease;
 }
@@ -755,7 +755,7 @@ body {
 }
 
 .portfolio--link:hover {
-  color: #0070f3;
+  color: #92A9A3;
 }
 
 .portfolio--link:hover svg {
@@ -859,7 +859,7 @@ body {
 .contact--input:focus {
   outline: none;
   border-color: var(--primary);
-  box-shadow: 0 0 0 3px rgba(0, 112, 243, 0.2);
+  box-shadow: 0 0 0 3px rgba(77, 243, 0, 0.2);
 }
 
 select.contact--input {
@@ -896,15 +896,15 @@ textarea.contact--input {
   font-size: 0.95rem;
   font-weight: 600;
   border-radius: 30px;
-  border: 2px solid #0099ff;
-  color: #0099ff;
+  border: 2px solid #87533A;
+  color: #006A4E;
   background: transparent;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
 .contact--form--btn:hover {
-  background: #0099ff;
+  background: #AB8573;
   color: #fff;
 }
 
@@ -958,7 +958,7 @@ textarea.contact--input {
 }
 
 .faq--section .sub--title {
-  color: var(--primary, #0099ff);
+  color: var(--primary, #87533A);
   text-transform: uppercase;
   font-weight: 600;
   font-size: 0.9rem;
@@ -991,7 +991,7 @@ textarea.contact--input {
 }
 
 .faq--section--card:hover {
-  border: 1px solid var(--primary, #0099ff);
+  border: 1px solid var(--primary, #87533A);
   transform: translateY(-3px);
 }
 
@@ -1008,12 +1008,12 @@ textarea.contact--input {
 }
 
 .faq--section--question:hover {
-  color: var(--primary, #0099ff);
+  color: var(--primary, #AB8573);
 }
 
 .faq--toggle {
   font-size: 1.5rem;
-  color: var(--primary, #0099ff);
+  color: var(--primary, #87533A);
   transition: transform 0.3s ease;
 }
 
@@ -1065,11 +1065,12 @@ textarea.contact--input {
 /* ================= FOOTER ================= */
 .footer--container {
   padding: 4rem 10%;
-  background: var(--footer-bg, #2f3154);
-  color: #fff;
+  background: var(--footer-bg, #ece5e2);
+  color: #87533A;
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  cursor: pointer;
 }
 
 .footer--link--container {
@@ -1098,7 +1099,7 @@ textarea.contact--input {
 
 .footer--items ul li a,
 .footer--social--icon ul li a {
-  color: #fff;
+  color: #87533A;
   text-decoration: none;
   font-size: 1rem;
   font-weight: 500;
@@ -1115,13 +1116,13 @@ textarea.contact--input {
   left: 0;
   width: 0;
   height: 2px;
-  background: #0099ff; /* azul suave */
+  background: #662201; /* azul suave */
   transition: width 0.3s ease;
 }
 
 .footer--items ul li a:hover,
 .footer--social--icon ul li a:hover {
-  color: #0099ff;
+  color: #662201;
 }
 
 .footer--items ul li a:hover::after,
@@ -1137,12 +1138,12 @@ textarea.contact--input {
 .footer--social--icon svg {
   width: 32px;
   height: 32px;
-  fill: var(--primary, #fff);
+  fill: var(--primary, #87533A);
   transition: all 0.3s ease;
 }
 
 .footer--social--icon svg:hover {
-  fill: #0099ff;
+  fill: #662201;
   transform: scale(1.1);
 }
 
@@ -1162,7 +1163,7 @@ textarea.contact--input {
 
 .footer--content {
   font-size: 0.9rem;
-  color: rgba(255, 255, 255, 0.7);
+  color: #87533A;
 }
 
 .footer--content--container ul {
@@ -1175,7 +1176,7 @@ textarea.contact--input {
 
 .footer--content--container ul li a {
   font-size: 0.8rem;
-  color: rgba(255, 255, 255, 0.7);
+  color: #87533A;
   text-decoration: none;
   font-weight: 500;
   position: relative;
@@ -1190,12 +1191,12 @@ textarea.contact--input {
   left: 0;
   width: 0;
   height: 1.5px;
-  background: #0099ff;
+  background: #87533A;
   transition: width 0.3s ease;
 }
 
 .footer--content--container ul li a:hover {
-  color: #0099ff;
+  color: #662201;
 }
 
 .footer--content--container ul li a:hover::after {
@@ -1203,7 +1204,7 @@ textarea.contact--input {
 }
 
 .footer-link {
-  color: rgba(255, 255, 255, 0.7);
+  color: #87533A;
   text-decoration: none;
   font-weight: 500;
   position: relative;
@@ -1217,12 +1218,12 @@ textarea.contact--input {
   left: 0;
   width: 0;
   height: 1.5px;
-  background: #0099ff;
+  background: #87533A;
   transition: width 0.3s ease;
 }
 
 .footer-link:hover {
-  color: #0099ff;
+  color: #662201;
 }
 
 .footer-link:hover::after {

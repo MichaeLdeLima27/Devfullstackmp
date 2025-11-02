@@ -17,7 +17,7 @@ export default function MySkills() {
         {/* Card 1: Landing Page Personalizada */}
         <div className="skills--section--card">
           <div className="skills--section--icon">
-            <FaLaptopCode size={60} color="#0070f3" />
+            <FaLaptopCode size={60} color="#006A4E" />
           </div>
           <div className="skills--section--card--content">
             <h3 className="skills--section--title">
@@ -33,7 +33,7 @@ export default function MySkills() {
         {/* Card 2: Máquina de Vendas */}
         <div className="skills--section--card">
           <div className="skills--section--icon">
-            <FaChartLine size={60} color="#0070f3" />
+            <FaChartLine size={60} color="#006A4E" />
           </div>
           <div className="skills--section--card--content">
             <h3 className="skills--section--title">Máquina de Vendas</h3>
@@ -48,7 +48,7 @@ export default function MySkills() {
         {/* Card 3: Perfeito para Anúncios */}
         <div className="skills--section--card">
           <div className="skills--section--icon">
-            <FaBullhorn size={60} color="#0070f3" />
+            <FaBullhorn size={60} color="#006A4E" />
           </div>
           <div className="skills--section--card--content">
             <h3 className="skills--section--title">Perfeito para Anúncios</h3>

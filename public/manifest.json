@@ -1,0 +1,26 @@
+{
+  "name": "Portfólio Michael de Lima Rocha",
+  "short_name": "Portfólio",
+  "description": "Portfólio de Michael de Lima Rocha - Desenvolvedor Fullstack",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#662201",
+  "icons": [
+    {
+      "src": "/logoipsum-custom-logo.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/logoipsum-custom-logo.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/logoipsum-custom-logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

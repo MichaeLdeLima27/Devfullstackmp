@@ -10,7 +10,7 @@ export default function HeroSection() {
         <div className="hero--section--text">
           <div className="hero--logo">
             <img
-              src="./img/logoipsum-custom-logo.png"
+              src="/logoipsum-custom-logo1.png"
               alt="Michael De Lima"
               className="navbar__logo"
             />
@@ -43,7 +43,7 @@ export default function HeroSection() {
 
         {/* Imagem e ícones sociais */}
         <div className="hero--section--media">
-          <img src="/img/michelmp1.png" alt="Michael" className="hero--media--img" />
+          <img src="/img/michel1.jpg" alt="Michael" className="hero--media--img" />
 
           <div className="hero--social--icon2">
             <ul>

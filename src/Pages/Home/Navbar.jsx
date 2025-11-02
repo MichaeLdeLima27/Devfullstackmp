@@ -31,7 +31,7 @@ export default function Navbar() {
   return (
     <nav className={`navbar ${scrolled ? 'navbar--scrolled' : ''} ${navActive ? 'active' : ''}`}>
       <div className="navbar__logo">
-        <img src="/logoipsum-custom-logo-2.png" alt="Michael De Lima" />
+        <img src="/logoipsum-custom-logo.png" alt="Michael De Lima" />
       </div>
 
       <button className={`nav__hamburger ${navActive ? 'active' : ''}`} onClick={toggleNav}>
